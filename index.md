@@ -169,7 +169,7 @@ Example by [Chirstopher Gandrud](http://christophergandrud.blogspot.co.uk/2013/0
 
 --- .segue .dark
 
-## So what?
+## Summary
 
 --- .segue .quote .dark
 
