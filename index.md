@@ -190,6 +190,17 @@ Karl Jaspers
 
 ---
 
+## Thanks to
+
+* [Steve Brooks](http://www.select-statistics.co.uk/about-us) for inviting me to Exeter
+* [Ramnath Vaidyanathan](https://github.com/ramnathv) for [slidify](https://github.com/ramnathv/slidify)
+* [Hans Rosling](http://www.gapminder.org) for showing us that data is not boring
+* [RStudio](http://rstudio.com) for shiny and hosting my scenario analysis app
+* Google for making the [interactive chart tools](https://developers.google.com/chart/) available 
+* [R Core](http://www.r-project.org) for their hard work and support
+
+---
+
 ## Questions?
 
 * Markus Gesmann
