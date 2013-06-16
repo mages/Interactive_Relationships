@@ -1,7 +1,7 @@
 Building interactive relationships with data and colleagues
 =========================================================
 
-[Slides](http://mages.github.io/InteractiveRelationships/#1) for the Talking Data South West conference talk at Exeter University, 20 June 2013
+[Slides](http://mages.github.io/Interactive_Relationships/#1) for the Talking Data South West conference talk at Exeter University, 20 June 2013
 
 ### License 
 
