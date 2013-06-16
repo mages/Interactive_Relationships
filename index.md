@@ -11,7 +11,7 @@ mode        : selfcontained # {standalone, draft}
 license     : by-nc-sa
 github      :
   user      : mages
-  repo      : InteractiveRelationships
+  repo      : Interactive_Relationships
 
 
 
