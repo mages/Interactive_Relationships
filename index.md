@@ -188,6 +188,10 @@ Karl Jaspers
 - Understand your colleagues / clients' assumptions
 - Challenge their current truth to generate actions
 
+--- .segue .dark
+
+## Questions?
+
 ---
 
 ## Thanks to
@@ -201,7 +205,7 @@ Karl Jaspers
 
 ---
 
-## Questions?
+## Contact
 
 * Markus Gesmann
 * [markus.gesmann gmail.com](mailto:markus.gesmann@gmail.com)
