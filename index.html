@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Building interactive relationships with data and colleagues</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Building interactive relationships with data and colleagues">
+  <meta name="author" content="Markus Gesmann">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+    <link rel="stylesheet" href = "assets/css/ribbons.css">
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+    <!-- END LOGO SLIDE -->
+    
+
+    <!-- TITLE SLIDE -->
+    <!-- Should I move this to a Local Layout File? -->
+    <slide class="title-slide segue nobackground">
+      <hgroup class="auto-fadein">
+        <h1>Building interactive relationships with data and colleagues</h1>
+        <h2>Talking Data South West, University of Exeter, 20 June 2013</h2>
+        <p>Markus Gesmann<br/>Maintainer of the googleVis and ChainLadder R packages</p>
+      </hgroup>
+      <a href="https://github.com/mages/InteractiveRelationships/zipball/gh-pages" class="example">
+        Download
+      </a>
+      
+      <footer class = 'license'>
+        <a href='http://creativecommons.org/licenses/by-nc-sa/3.0/'>
+        <img width = '80px' src = 'http://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-nc-sa.png'>
+        </a>
+      </footer>
+    </slide>
+
+    <!-- SLIDES -->
+      <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>Abstract</h2>
+  </hgroup>
+  <article>
+    <p>Data is often used to initiate change. </p>
+
+<p>Indeed, the statistical analysis of data can help to test ideas and hypothesis and provide support for change. </p>
+
+<p>Yet, it is the interaction with people which matters the most.</p>
+
+<p>Communicating the results of a data analysis and helping others to see the stories in the numbers is challenging. </p>
+
+<p>I will talk about my experience and the tools I developed to build engaging relationships with my colleagues.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+      <slide class="segue dark" id="slide-2" style="background:;">
+  <hgroup>
+    <h2>This talk will change your life</h2>
+  </hgroup>
+  <article>
+    
+  </article>
+  <!-- Presenter Notes -->
+  <aside class="note">
+    <section>
+      <p>This talk is very much about change.
+I suppose any talk would like to initiate change.
+We, as presenters, think that we have something to tell, 
+which will change your life. Forever.
+So, basically you will sit through a whole day of marketing.</p>
+
+<p>Yet, change is challenging.
+We are human beings, and we only change if we have to.
+You want to loose some weight? Eat less and exercise more. Easy.
+It&#39;s hard isn&#39;t it.</p>
+
+    </section>
+  </aside>
+</slide>
+
+      <slide class="segue dark" id="slide-3" style="background:;">
+  <hgroup>
+    <h2>Trust me</h2>
+  </hgroup>
+  <article>
+    
+  </article>
+  <!-- Presenter Notes -->
+  <aside class="note">
+    <section>
+      <p>Well, but if my doctor, who I trust, would tell me that 
+I need to change or otherwise I would develop a life threatening
+disease, then I actually might listen.
+I listen to my doctor, because I know him for many years
+and he has helped me in the past.
+Why would you listen to me and take any advice?
+I am up here, so maybe that gives me some authoritative.</p>
+
+    </section>
+  </aside>
+</slide>
+
+      <slide class="segue quote dark" id="slide-4" style="background:;">
+  <hgroup>
+    
+  </hgroup>
+  <article>
+    <style>
+.dark q {
+  color: white;
+}
+</style>
+
+<p><q> Truth is what connects us.</q></p>
+
+<p>Karl Jaspers</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+      <slide class="" id="slide-5" style="background:;">
+  <hgroup>
+    <h2>You can only be proven wrong</h2>
+  </hgroup>
+  <article>
+    <table>
+<td>
+<img alt="Karl Popper" height="450" src="https://upload.wikimedia.org/wikipedia/commons/4/43/Karl_Popper.jpg"/><br/> 
+Karl Popper. Source: <a href="http://archives.lse.ac.uk/record.aspx?src=CalmView.Catalog&id=IMAGELIBRARY%2f5">LSE Image library</a>
+</td>
+<td>
+<img alt="Black Swan" height="450" src="http://upload.wikimedia.org/wikipedia/commons/b/b2/Cygnus_atratus_Running.jpg"/><br/> 
+Black Swan. Source: <a href="http://en.wikipedia.org/wiki/File:Cygnus_atratus_Running.jpg">JJ Harrision</a>, <a href="http://creativecommons.org/licenses/by-sa/3.0/deed.en"/>CC-BY-SA</a>
+</td>
+
+</table>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+      <slide class="" id="slide-6" style="background:;">
+  <hgroup>
+    <h2>Or, you make money until you don&#39;t</h2>
+  </hgroup>
+  <article>
+    <p><img src="Lehman.png" alt="Lehamn Brothers"></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+      <slide class="" id="slide-7" style="background:;">
+  <hgroup>
+    <h2>Hans Rosling: The World has changed</h2>
+  </hgroup>
+  <article>
+    <iframe width="420" height="315" src="http://www.youtube.com/embed/hVimVzgtD6w" frameborder="0" allowfullscreen></iframe>
+
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+      <slide class="" id="slide-8" style="background:;">
+  <hgroup>
+    <h2>It&#39;s easy to replicate Hans&#39; charts</h2>
+  </hgroup>
+  <article>
+    <iframe src="WorldBank.html" frameborder="0">Loading</iframe>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+      <slide class="segue dark" id="slide-9" style="background:;">
+  <hgroup>
+    <h2>Change requires a challenge to the accepted truth</h2>
+  </hgroup>
+  <article>
+    
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+      <slide class="" id="slide-10" style="background:;">
+  <hgroup>
+    <h2>The &#39;turth&#39; varies by background</h2>
+  </hgroup>
+  <article>
+    <ul>
+<li>Underwriting</li>
+<li>Actuarial</li>
+<li>Claims </li>
+<li>Exposure management</li>
+<li>Accounting</li>
+<li>Communication / Marketing</li>
+<li>Legal</li>
+<li>IT</li>
+<li>Regulators</li>
+<li>Rating agencies</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+      <slide class="segue dark" id="slide-11" style="background:;">
+  <hgroup>
+    <h2>Find the best comparison</h2>
+  </hgroup>
+  <article>
+    
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+      <slide class="" id="slide-12" style="background:;">
+  <hgroup>
+    <h2>Time well spend?</h2>
+  </hgroup>
+  <article>
+    <p><img src="geeks-vs-nongeeks-repetitive-tasks.png" alt="Geeks vs nongeeks"><br>
+Author: <a href="https://plus.google.com/102451193315916178828/posts/MGxauXypb1Y">Bruno Oliveira</a></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+      <slide class="" id="slide-13" style="background:;">
+  <hgroup>
+    <h2>Performance against plan and peer group</h2>
+  </hgroup>
+  <article>
+    <p><img src="Relative.png" alt="Performance vs peer group and plan"></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+      <slide class="" id="slide-14" style="background:;">
+  <hgroup>
+    <h2>Use interactive charts for what if analysis</h2>
+  </hgroup>
+  <article>
+    <iframe src="http://glimmer.rstudio.com/mages/WhaleChart/" frameborder="0">
+Loading</iframe>
+
+<p>Example with <a href="http://www.r-project.org">R</a> and <a href="http://code.google.com/p/google-motion-charts-with-r/">googleVis</a> on <a href="http://www.rstudio.com/shiny/">shiny</a> (Reload this page if no line chart appears)</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+      <slide class="" id="slide-15" style="background:;">
+  <hgroup>
+    <h2>Be playful and have fun</h2>
+  </hgroup>
+  <article>
+    <iframe src="NetworkD3.html" width="800" height="400" frameborder="0">Loading</iframe>
+
+<p>Example by <a href="http://christophergandrud.blogspot.co.uk/2013/06/quick-and-simple-d3-network-graphs-from.html">Chirstopher Gandrud</a></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+      <slide class="segue dark" id="slide-16" style="background:;">
+  <hgroup>
+    <h2>So what?</h2>
+  </hgroup>
+  <article>
+    
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+      <slide class="segue quote dark" id="slide-17" style="background:;">
+  <hgroup>
+    
+  </hgroup>
+  <article>
+    <style>
+.dark q {
+  color: white;
+}
+</style>
+
+<p><q>In communication lies the origin of truth.</q></p>
+
+<p>Karl Jaspers</p>
+
+
+  </article>
+  <!-- Presenter Notes -->
+  <aside class="note">
+    <section>
+      <ul>
+<li>Build trustful relationships</li>
+<li>Understand your colleagues / clients&#39; assumptions</li>
+<li>Challenge their current truth to generate actions</li>
+</ul>
+
+    </section>
+  </aside>
+</slide>
+
+      <slide class="" id="slide-18" style="background:;">
+  <hgroup>
+    <h2>Questions?</h2>
+  </hgroup>
+  <article>
+    <ul>
+<li>Markus Gesmann</li>
+<li><a href="mailto:markus.gesmann@gmail.com">markus.gesmann gmail.com</a></li>
+<li>My blog: <a href="http://lamages.blogspot.com">http://lamages.blogspot.com</a></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+      <slide class="" id="slide-19" style="background:;">
+  <hgroup>
+    <h2>How I created these slides in R</h2>
+  </hgroup>
+  <article>
+    <pre><code class="r">library(slidify)
+author(&quot;InteractiveRelationships&quot;)
+## Edit the file index.Rmd file and then
+slidify(&quot;index.Rmd&quot;)
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+      <slide class="" id="slide-20" style="background:;">
+  <hgroup>
+    <h2>Session Info</h2>
+  </hgroup>
+  <article>
+    <pre><code class="r">sessionInfo()
+</code></pre>
+
+<pre><code>## R version 3.0.1 (2013-05-16)
+## Platform: x86_64-apple-darwin10.8.0 (64-bit)
+## 
+## locale:
+## [1] en_GB.UTF-8/en_GB.UTF-8/en_GB.UTF-8/C/en_GB.UTF-8/en_GB.UTF-8
+## 
+## attached base packages:
+## [1] splines   stats     graphics  grDevices utils     datasets  methods  
+## [8] base     
+## 
+## other attached packages:
+## [1] latticeExtra_0.6-24 RColorBrewer_1.0-5  lattice_0.20-15    
+## [4] actuar_1.1-6        fitdistrplus_1.0-1  survival_2.37-4    
+## [7] MASS_7.3-26         googleVis_0.4.3     slidify_0.3.3      
+## 
+## loaded via a namespace (and not attached):
+##  [1] digest_0.6.3   evaluate_0.4.3 formatR_0.7    grid_3.0.1    
+##  [5] knitr_1.2      markdown_0.5.4 RJSONIO_1.0-3  stringr_0.6.2 
+##  [9] tools_3.0.1    whisker_0.3-2  yaml_2.1.7
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+
+  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+<!-- Grab CDN jQuery, fall back to local if offline -->
+<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+<script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery-1.7.min.js"><\/script>')</script>
+<!-- Load Javascripts for Widgets -->
+<!-- LOAD HIGHLIGHTER JS FILES -->
+<script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<!-- DONE LOADING HIGHLIGHTER JS FILES -->
+</html>
