@@ -122,7 +122,7 @@ Insurance enables change
 
 ---
 
-## The 'turth' varies by background 
+## The 'truth' varies by background 
 
   * Underwriting
   * Actuarial
@@ -240,17 +240,14 @@ sessionInfo()
 ## [1] en_GB.UTF-8/en_GB.UTF-8/en_GB.UTF-8/C/en_GB.UTF-8/en_GB.UTF-8
 ## 
 ## attached base packages:
-## [1] splines   stats     graphics  grDevices utils     datasets  methods  
-## [8] base     
+## [1] stats     graphics  grDevices utils     datasets  methods   base     
 ## 
 ## other attached packages:
-## [1] latticeExtra_0.6-24 RColorBrewer_1.0-5  lattice_0.20-15    
-## [4] actuar_1.1-6        fitdistrplus_1.0-1  survival_2.37-4    
-## [7] MASS_7.3-26         googleVis_0.4.3     slidify_0.3.3      
+## [1] googleVis_0.4.3 slidify_0.3.3  
 ## 
 ## loaded via a namespace (and not attached):
-##  [1] digest_0.6.3   evaluate_0.4.3 formatR_0.7    grid_3.0.1    
-##  [5] knitr_1.2      markdown_0.5.4 RJSONIO_1.0-3  stringr_0.6.2 
-##  [9] tools_3.0.1    whisker_0.3-2  yaml_2.1.7
+##  [1] digest_0.6.3   evaluate_0.4.3 formatR_0.7    knitr_1.2     
+##  [5] markdown_0.5.4 RJSONIO_1.0-3  stringr_0.6.2  tools_3.0.1   
+##  [9] whisker_0.3-2  yaml_2.1.7
 ```
 
